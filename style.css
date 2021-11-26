@@ -212,8 +212,14 @@ body{
     background: linear-gradient(mediumslateblue,red);
 }
 
+.page{
+    display: flexbox;
+    align-items: center;
+    justify-content
+}
+
 .ins img {
-    width: 35%;
+    width:40% ;
 }
 
 @media ( max-width:600px ) {
