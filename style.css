@@ -249,7 +249,9 @@ body{
 .page{
     display: flexbox;
     align-items: center;
-    justify-content
+    display: flex;
+    flex-flow: row wrap;
+    width:50%;
 }
 
 #contacts .ins img {
