@@ -79,9 +79,6 @@ body{
     padding-right: 16px;
     padding-left: 20px;
     padding-bottom: 10px;
-    /* margin-right: auto;
-    margin-left: auto; */
-    /* text-align: center; */
 }
 
 #about {
@@ -91,7 +88,6 @@ body{
 #about .wrapper {
     display: flex;
     flex-wrap: wrap;
-    /* width: 90%; */
 }
 
 #about .textimage {
@@ -130,7 +126,6 @@ body{
 }
 
 #about .section-text {
-    /* font-size: 18px; */
     width: 50%;
 }
 
@@ -148,7 +143,6 @@ body{
 }
 
 #about .section-image-1 img{
-    /* height: 200px; */
     width: 100%;
 }
 
@@ -167,13 +161,6 @@ body{
     padding-left: 40px;
     margin-right: 60px;
 }
-
-
-/* .section-image{
-    display: flex;
-    margin-bottom: 10px;
-    gap: 10px;
-} */
 
 #portfolio {
     background: linear-gradient(to left,violet,white)
@@ -198,16 +185,6 @@ body{
     width: 100%;
 }
 
-/* #portfolio .section-text {
-    width: 45%;
-} */
-
-/* #portfolio .section-image {
-    width: 45%;
-    padding-left: 40px;
-    margin-right: 60px;
-} */
-
 .section-image{
     display: flex;
     margin-bottom: 10px;
@@ -215,10 +192,8 @@ body{
 }
 
 .gallery-item{
-    /* border: 1px solid red; */
     min-height: 50px;
     flex-basis: 100%;
-    /* background-color: rosybrown; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,7 +206,6 @@ body{
     bottom: 0px;
     width: 100%;
     text-align: center;
-    /* color:rgb(0, 225, 255); */
 }
 
 #portfolio .img-1 .item1{color: rgb(255, 0, 0);}
@@ -246,16 +220,26 @@ body{
     background: linear-gradient(mediumslateblue,red);
 }
 
+#contacts .wrapper{
+    text-align: center;
+}
+
+#contacts .wrapper .page{
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
 .page{
-    display: flexbox;
-    align-items: center;
     display: flex;
-    flex-flow: row wrap;
-    width:50%;
+    align-items: center;
+}
+
+.ins{
+    padding-right: 10px;
 }
 
 #contacts .ins img {
-    width: 40% ;
+    width: 120px ;
 }
 
 @media ( max-width:600px ) {
@@ -316,7 +300,6 @@ body{
         height: 100%;
     }
     .gallery-item p{
-        /* padding-left: 70%; */
         padding-right: 5%;
         font-size: 12px;
         position: absolute;
@@ -328,6 +311,19 @@ body{
     #portfolio .img-2 .item2 p{        padding-right: 15% ;}
     #portfolio .img-1 .item3 p {color: white;}
     #portfolio .img-1 .item1 p {color: black;}
+
+    #contacts .wrapper .page{
+        padding-left: 23%;
+        padding-right: 35%;
+    }
+}
+
+@media (max-width:850px) {
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+/* .gallery-item p { display: none;} */
 }
 
 @media ( min-width:600px ) {
